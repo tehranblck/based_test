@@ -10,133 +10,133 @@
         "id": "spotify",
         "name": "Spotify",
         "slug": "spotify",
-        "image": "/categori3.gif",
+        "image": "/categori.webp",
         "description": "Spotify Premium hesabları"
     },
     {
         "id": "chatgpt",
         "name": "ChatGPT Plus",
         "slug": "chatgpt",
-        "image": "/categori5.webp",
+        "image": "/categori.webp",
         "description": "ChatGPT Plus abunəlikləri"
     },
     {
         "id": "youtube",
         "name": "YouTube Premium",
         "slug": "youtube",
-        "image": "/categori3.gif",
+        "image": "/categori.webp",
         "description": "YouTube Premium hesabları"
     },
     {
         "id": "disney",
         "name": "Disney+",
         "slug": "disney",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Disney Plus hesabları"
     },
     {
         "id": "amazon",
         "name": "Amazon Prime",
         "slug": "amazon",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Amazon Prime Video hesabları"
     },
     {
         "id": "adobe",
         "name": "Adobe Creative",
         "slug": "adobe",
-        "image": "/categori4.webp",
+        "image": "/categori.webp",
         "description": "Adobe Creative Cloud lisenziyaları"
     },
     {
         "id": "office",
         "name": "Microsoft Office",
         "slug": "office",
-        "image": "/categori4.webp",
+        "image": "/categori.webp",
         "description": "Microsoft Office 365 hesabları"
     },
     {
         "id": "canva",
         "name": "Canva Pro",
         "slug": "canva",
-        "image": "/categori5.webp",
+        "image": "/categori.webp",
         "description": "Canva Pro hesabları"
     },
     {
         "id": "grammarly",
         "name": "Grammarly",
         "slug": "grammarly",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Grammarly Premium hesabları"
     },
     {
         "id": "figma",
         "name": "Figma",
         "slug": "figma",
-        "image": "/categori3.gif",
+        "image": "/categori.webp",
         "description": "Figma Pro hesabları"
     },
     {
         "id": "vpn",
         "name": "VPN Xidmətləri",
         "slug": "vpn",
-        "image": "/categori3.gif",
+        "image": "/categori.webp",
         "description": "Premium VPN hesabları"
     },
     {
         "id": "gaming",
         "name": "Oyun Platformaları",
         "slug": "gaming",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Steam, Epic Games və digər oyun hesabları"
     },
     {
         "id": "social",
         "name": "Sosial Media",
         "slug": "social",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Instagram, TikTok və digər sosial media"
     },
     {
         "id": "productivity",
         "name": "Məhsuldarlıq",
         "slug": "productivity",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Notion, Slack və digər məhsuldarlıq alətləri"
     },
     {
         "id": "hulu",
         "name": "Hulu",
         "slug": "hulu",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Hulu streaming hesabları"
     },
     {
         "id": "paramount",
         "name": "Paramount+",
         "slug": "paramount",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Paramount Plus hesabları"
     },
     {
         "id": "hbo",
         "name": "HBO Max",
         "slug": "hbo",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "HBO Max streaming hesabları"
     },
     {
         "id": "apple",
         "name": "Apple Services",
         "slug": "apple",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "Apple Music, iCloud və digər Apple xidmətləri"
     },
     {
         "id": "github",
         "name": "GitHub Pro",
         "slug": "github",
-        "image": "/categori1.webp",
+        "image": "/categori.webp",
         "description": "GitHub Pro və Enterprise hesabları"
     }
 ]

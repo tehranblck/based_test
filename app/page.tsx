@@ -1,5 +1,10 @@
 import dynamic from "next/dynamic";
+import Hero from "@/components/Hero/Hero";
 
+const CategoriesCarousel = dynamic(
+  () => import("@/components/Categories_Circle/CategoriesCarousel"),
+  { ssr: true }
+);
 const CategoriesHome = dynamic(
   () => import("@/components/CategoriesHome/CategoriesHome"),
   { ssr: true }
@@ -14,6 +19,8 @@ export default function Home() {
     <>
 
       <main>
+        <CategoriesCarousel />
+        <Hero />
         <CategoriesHome />
         <BigCategories />
 
