@@ -17,6 +17,10 @@ const TestimonialHome = dynamic(
   () => import("@/components/TestimonialHome/TestimonialHome"),
   { ssr: true }
 );
+const WhyUs = dynamic(
+  () => import("@/components/Why_Us/WhyUs"),
+  { ssr: true }
+);
 
 export default function Home() {
   return (
@@ -27,10 +31,9 @@ export default function Home() {
         <Hero />
         <CategoriesHome />
         <TestimonialHome />
-
         <BigCategories />
-
-      </main >
+        <WhyUs />
+      </main>
     </>
   );
 }

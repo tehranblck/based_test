@@ -3,14 +3,16 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, ShoppingBag, Info, Phone, FileText } from "lucide-react";
+import { Home, ShoppingBag, Info, Phone, FileText, Shield } from "lucide-react";
 
 const navigationLinks = [
     { href: "/", label: "Ana Səhifə", icon: Home },
     { href: "/products", label: "Məhsullar", icon: ShoppingBag },
     { href: "/about", label: "Haqqımızda", icon: Info },
-    { href: "/contact", label: "Əlaqə", icon: Phone },
+    { href: "/bloq", label: "Bloq", icon: Shield },
     { href: "/terms", label: "Şərtlər", icon: FileText },
+    { href: "/contact", label: "Əlaqə", icon: Phone },
+
 ];
 
 export function Navlinks() {

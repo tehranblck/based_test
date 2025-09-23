@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 import { Container } from "@/components/Container/Container";
 import { Particles } from "@/components/ui/shadcn-io/particles";
 
@@ -52,6 +53,8 @@ export default function RootLayout({
           <Container>
             {children}
           </Container>
+          
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

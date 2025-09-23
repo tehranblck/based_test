@@ -52,4 +52,9 @@ export type SortOption = {
     icon?: React.ComponentType<{ className?: string }>;
 };
 
+export type FeatureBoxProps = {
+    icon: React.ReactNode;
+    title: string;
+    description: string;
+};
 

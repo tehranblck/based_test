@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`WhyUs matches snapshot 1`] = `
+<section
+  class="py-16 px-4 bg-background relative overflow-hidden"
+>
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-yellow-400/5 via-transparent to-yellow-400/5 animate-pulse"
+  />
+  <div
+    class="max-w-7xl mx-auto relative z-10"
+  >
+    <div
+      class="text-center mb-12"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-bold text-foreground mb-4"
+      >
+        Niyə Biz?
+      </h2>
+      <p
+        class="text-lg text-muted-foreground max-w-2xl mx-auto"
+      >
+        "Rahatlıq, təhlükəsizlik və sərfəli qiymətlər bir arada."
+      </p>
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+    >
+      <div
+        class="animate-fade-in-up"
+        style="animation-delay: 0ms;"
+      >
+        <div
+          class="group bg-card border border-border rounded-lg p-6 hover:shadow-2xl hover:shadow-yellow-400/20 hover:-translate-y-2 hover:scale-105 hover:border-yellow-400/50 hover:bg-gradient-to-br hover:from-card hover:to-yellow-50/5 dark:hover:to-yellow-400/5 transition-all duration-200 ease-out cursor-pointer animate-pulse hover:animate-none"
+        >
+          <div
+            class="mb-4 inline-flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-lg group-hover:scale-125 group-hover:rotate-12 group-hover:bg-yellow-300 group-hover:shadow-lg group-hover:shadow-yellow-400/50 transition-all duration-150 ease-out group-hover:animate-bounce"
+          >
+            <div
+              class="group-hover:scale-75 group-hover:rotate-[-6deg] transition-all duration-100 ease-out"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-shield w-6 h-6 text-gray-800"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3
+            class="text-lg font-semibold text-foreground mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 group-hover:scale-105 transition-all duration-150 group-hover:tracking-wide"
+          >
+            Rəsmi Hesablar
+          </h3>
+          <p
+            class="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground group-hover:scale-[1.02] transition-all duration-200 group-hover:leading-loose"
+          >
+            Sizə yalnız lisenziyalı, rəsmi və təhlükəsiz premium hesablar təqdim edirik. Saxta və qeyri-qanuni profillərlə riskə getməyin - Based.Az etibarinizi və hesab təhlükəsizliyinizi qoruyur.
+          </p>
+        </div>
+      </div>
+      <div
+        class="animate-fade-in-up"
+        style="animation-delay: 150ms;"
+      >
+        <div
+          class="group bg-card border border-border rounded-lg p-6 hover:shadow-2xl hover:shadow-yellow-400/20 hover:-translate-y-2 hover:scale-105 hover:border-yellow-400/50 hover:bg-gradient-to-br hover:from-card hover:to-yellow-50/5 dark:hover:to-yellow-400/5 transition-all duration-200 ease-out cursor-pointer animate-pulse hover:animate-none"
+        >
+          <div
+            class="mb-4 inline-flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-lg group-hover:scale-125 group-hover:rotate-12 group-hover:bg-yellow-300 group-hover:shadow-lg group-hover:shadow-yellow-400/50 transition-all duration-150 ease-out group-hover:animate-bounce"
+          >
+            <div
+              class="group-hover:scale-75 group-hover:rotate-[-6deg] transition-all duration-100 ease-out"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-tag w-6 h-6 text-gray-800"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"
+                />
+                <circle
+                  cx="7.5"
+                  cy="7.5"
+                  fill="currentColor"
+                  r=".5"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3
+            class="text-lg font-semibold text-foreground mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 group-hover:scale-105 transition-all duration-150 group-hover:tracking-wide"
+          >
+            Münasib Qiymətlər
+          </h3>
+          <p
+            class="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground group-hover:scale-[1.02] transition-all duration-200 group-hover:leading-loose"
+          >
+            Ən populyar platformlara sərfəli qiymətlərlə çıxış imkanı veririk. Premium keyfiyyəti artıq baha qiyməte almaqa ehtiyac yoxdur - Based.Az ilə cibiniz də rahat nəfəs alacaq.
+          </p>
+        </div>
+      </div>
+      <div
+        class="animate-fade-in-up"
+        style="animation-delay: 300ms;"
+      >
+        <div
+          class="group bg-card border border-border rounded-lg p-6 hover:shadow-2xl hover:shadow-yellow-400/20 hover:-translate-y-2 hover:scale-105 hover:border-yellow-400/50 hover:bg-gradient-to-br hover:from-card hover:to-yellow-50/5 dark:hover:to-yellow-400/5 transition-all duration-200 ease-out cursor-pointer animate-pulse hover:animate-none"
+        >
+          <div
+            class="mb-4 inline-flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-lg group-hover:scale-125 group-hover:rotate-12 group-hover:bg-yellow-300 group-hover:shadow-lg group-hover:shadow-yellow-400/50 transition-all duration-150 ease-out group-hover:animate-bounce"
+          >
+            <div
+              class="group-hover:scale-75 group-hover:rotate-[-6deg] transition-all duration-100 ease-out"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-headphones w-6 h-6 text-gray-800"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3
+            class="text-lg font-semibold text-foreground mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 group-hover:scale-105 transition-all duration-150 group-hover:tracking-wide"
+          >
+            24/7 Dəstək Komandası
+          </h3>
+          <p
+            class="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground group-hover:scale-[1.02] transition-all duration-200 group-hover:leading-loose"
+          >
+            Sual və çətinlik yaranırsa, gecə və ya gündüz fərq etməz - Based.Az dəstək komandası daim yanınızdadır. Bizə yazın, tez və dəqiq kömək alacaqsınız.
+          </p>
+        </div>
+      </div>
+      <div
+        class="animate-fade-in-up"
+        style="animation-delay: 450ms;"
+      >
+        <div
+          class="group bg-card border border-border rounded-lg p-6 hover:shadow-2xl hover:shadow-yellow-400/20 hover:-translate-y-2 hover:scale-105 hover:border-yellow-400/50 hover:bg-gradient-to-br hover:from-card hover:to-yellow-50/5 dark:hover:to-yellow-400/5 transition-all duration-200 ease-out cursor-pointer animate-pulse hover:animate-none"
+        >
+          <div
+            class="mb-4 inline-flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-lg group-hover:scale-125 group-hover:rotate-12 group-hover:bg-yellow-300 group-hover:shadow-lg group-hover:shadow-yellow-400/50 transition-all duration-150 ease-out group-hover:animate-bounce"
+          >
+            <div
+              class="group-hover:scale-75 group-hover:rotate-[-6deg] transition-all duration-100 ease-out"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-clock w-6 h-6 text-gray-800"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 6v6l4 2"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3
+            class="text-lg font-semibold text-foreground mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 group-hover:scale-105 transition-all duration-150 group-hover:tracking-wide"
+          >
+            Sürətli Təhvil
+          </h3>
+          <p
+            class="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground group-hover:scale-[1.02] transition-all duration-200 group-hover:leading-loose"
+          >
+            Sifarişi etdiyiniz xidmətlər dərhal aktivləşdirilir. Uzun gözləmə yoxdur - Based.Az ilə sürətli və problemsiz keçid sizin olur.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
