@@ -25,11 +25,11 @@ export default function Header() {
 
     return (
         <>
-            <header className="sticky top-0 z-50 w-full border-b border-border bg-card/90 text-card-foreground backdrop-blur supports-[backdrop-filter]:bg-card/60">
+            <header className="fixed top-0 z-50 w-full border-b border-border bg-card/95 text-card-foreground backdrop-blur-md supports-[backdrop-filter]:bg-card/80">
                 <div
                     className={cn(
-                        "overflow-hidden will-change-[max-height,opacity,transform] transition-[max-height,opacity,transform] duration-300 ease-out",
-                        showTopbar ? "max-h-10 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"
+                        "overflow-hidden transition-all duration-300 ease-out",
+                        showTopbar ? "h-10 opacity-100" : "h-0 opacity-0"
                     )}
                 >
                     <Topbar />
@@ -53,7 +53,7 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-
+            <div className="h-16 sm:h-20" />
         </>
     );
 }

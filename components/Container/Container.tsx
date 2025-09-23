@@ -14,7 +14,7 @@ export function Container({
     return (
         <Component
             className={cn(
-                "max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-0",
+                "max-w-[90rem] mx-auto px-4 mt-12 sm:px-6 lg:px-0",
                 className
             )}
         >
