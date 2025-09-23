@@ -26,6 +26,7 @@ const defaultOptions: SortOption[] = [
 export default function Bar({ title = "Məhsullar", className, sortOptions = defaultOptions, sortValue, onSortChange }: BarProps) {
     const [internal, setInternal] = useState(sortValue ?? sortOptions[0]?.value ?? "newest");
     const currentValue = sortValue ?? internal;
+    const hasSort = (sortOptions?.length ?? 0) > 0;
 
     return (
         <div className={cn("w-full bg-secondary rounded-xl text-secondary-foreground shadow-sm", className)}>
@@ -37,11 +38,13 @@ export default function Bar({ title = "Məhsullar", className, sortOptions = def
                         </h1>
                     </div>
 
-                    <SortMenu
-                        options={sortOptions}
-                        value={currentValue}
-                        onChange={(v) => (onSortChange ? onSortChange(v) : setInternal(v))}
-                    />
+                    {hasSort ? (
+                        <SortMenu
+                            options={sortOptions}
+                            value={currentValue}
+                            onChange={(v) => (onSortChange ? onSortChange(v) : setInternal(v))}
+                        />
+                    ) : null}
                 </div>
             </div>
         </div>

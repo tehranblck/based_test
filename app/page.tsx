@@ -13,6 +13,10 @@ const BigCategories = dynamic(
   () => import("@/components/BigCategories/BigCategories"),
   { ssr: true }
 );
+const TestimonialHome = dynamic(
+  () => import("@/components/TestimonialHome/TestimonialHome"),
+  { ssr: true }
+);
 
 export default function Home() {
   return (
@@ -22,6 +26,8 @@ export default function Home() {
         <CategoriesCarousel />
         <Hero />
         <CategoriesHome />
+        <TestimonialHome />
+
         <BigCategories />
 
       </main >

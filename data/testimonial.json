@@ -2,7 +2,7 @@
     {
         "id": "t1",
         "name": "Ramil M.",
-        "avatar": "/logo.png",
+        "avatar": "/pp.jpg",
         "rating": 5,
         "service": "Netflix",
         "comment": "Sifarişdən sonra dərhal hesab aktiv oldu. Çox sürətlidirlər.",
@@ -11,64 +11,64 @@
     {
         "id": "t2",
         "name": "Nigar A.",
-        "avatar": "/logo.png",
+        "avatar": "/pp.jpg",
         "rating": 5,
         "service": "Spotify",
-        "comment": "Ödənişdən dərhal sonra giriş məlumatları gəldi, heç bir problem olmadı.",
+        "comment": "Sifarişdən sonra dərhal hesab aktiv oldu. Çox sürətlidirlər.",
         "date": "2025-02-03"
     },
     {
         "id": "t3",
         "name": "Cavid H.",
-        "avatar": "/logo.png",
+        "avatar": "/pp.jpg",
         "rating": 4,
         "service": "ChatGPT Plus",
-        "comment": "Dəstək komandası çox köməkçi oldu. Hizmət ümumilikdə əladı.",
+        "comment": "Sifarişdən sonra dərhal hesab aktiv oldu. Çox sürətlidirlər.",
         "date": "2025-02-20"
     },
     {
         "id": "t4",
         "name": "Aysel S.",
-        "avatar": "/logo.png",
+        "avatar": "/pp.jpg",
         "rating": 5,
         "service": "YouTube Premium",
-        "comment": "Qiymətlər münasibdir, aktivasiya saniyələr içində edildi.",
+        "comment": "Sifarişdən sonra dərhal hesab aktiv oldu. Çox sürətlidirlər.",
         "date": "2025-03-05"
     },
     {
         "id": "t5",
         "name": "Elvin R.",
-        "avatar": "/logo.png",
+        "avatar": "/pp.jpg",
         "rating": 5,
         "service": "Disney+",
-        "comment": "Tövsiyə edirəm. Stabil və sürətli xidmət.",
+        "comment": "Sifarişdən sonra dərhal hesab aktiv oldu. Çox sürətlidirlər.",
         "date": "2025-03-18"
     },
     {
         "id": "t6",
         "name": "Sevinc K.",
-        "avatar": "/logo.png",
+        "avatar": "/pp.jpg",
         "rating": 4,
         "service": "VPN",
-        "comment": "Quraşdırma təlimatı aydın idi. Hər şey problemsiz işləyir.",
+        "comment": "Sifarişdən sonra dərhal hesab aktiv oldu. Çox sürətlidirlər.",
         "date": "2025-04-02"
     },
     {
         "id": "t7",
         "name": "Orxan T.",
-        "avatar": "/logo.png",
+        "avatar": "/pp.jpg",
         "rating": 5,
         "service": "Adobe Creative",
-        "comment": "Dizayn işlərim üçün çox faydalı oldu. Dəstək sürətli cavab verdi.",
+        "comment": "Sifarişdən sonra dərhal hesab aktiv oldu. Çox sürətlidirlər.",
         "date": "2025-04-19"
     },
     {
         "id": "t8",
         "name": "Leyla Q.",
-        "avatar": "/logo.png",
+        "avatar": "/pp.jpg",
         "rating": 5,
         "service": "Microsoft Office",
-        "comment": "Bir neçə dəqiqəyə istifadə etməyə başladım. Super təcrübə!",
+        "comment": "Sifarişdən sonra dərhal hesab aktiv oldu. Çox sürətlidirlər.",
         "date": "2025-05-01"
     }
 ]
