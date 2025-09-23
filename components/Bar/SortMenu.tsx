@@ -3,12 +3,9 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import type { SortOption } from "@/types";
 
-export type SortOption = {
-    value: string;
-    label: string;
-    icon?: React.ComponentType<{ className?: string }>;
-};
+export type { SortOption };
 
 interface SortMenuProps {
     options: SortOption[];

@@ -20,7 +20,7 @@ export function Carousel({ className, children, opts, autoPlayMs = 0, pauseOnHov
     const [paused, setPaused] = React.useState(false);
     const align = opts?.align ?? "start";
 
-    const scrollTo = (index: number) => {
+    const scrollTo = React.useCallback((index: number) => {
         const vp = viewportRef.current;
         if (!vp) return;
         const items = Array.from(vp.querySelectorAll("[data-carousel-item]")) as HTMLElement[];
@@ -29,7 +29,7 @@ export function Carousel({ className, children, opts, autoPlayMs = 0, pauseOnHov
         const left = target.offsetLeft - (align === "center" ? (vp.clientWidth - target.clientWidth) / 2 : 0);
         vp.scrollTo({ left, behavior: "smooth" });
         setCurrent(index);
-    };
+    }, [align]);
 
     const next = () => {
         if (count <= 0) return;

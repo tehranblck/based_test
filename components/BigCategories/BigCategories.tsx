@@ -1,0 +1,146 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useMemo, useRef, useState } from "react";
+import categoriesData from "@/data/categories.json";
+import ActionLinkButton from "@/components/ui/action-link-button";
+import type { Category, BigCategory, BigCategoryItem } from "@/types";
+
+export type { BigCategoryItem, BigCategory };
+
+function AutoScrollRow({ items, size = 44, autoScroll = true, speedMsPerStep = 18 }: { items: BigCategoryItem[]; size?: number; autoScroll?: boolean; speedMsPerStep?: number }) {
+    const trackRef = useRef<HTMLDivElement | null>(null);
+    const intervalRef = useRef<NodeJS.Timeout | null>(null);
+    const [isHovering, setIsHovering] = useState(false);
+    const loopItems = useMemo(() => (items.length ? [...items, ...items] : items), [items]);
+
+    useEffect(() => {
+        if (!autoScroll) return;
+        const el = trackRef.current;
+        if (!el) return;
+        if (el.scrollWidth <= el.clientWidth) return;
+        const tick = () => {
+            const t = trackRef.current;
+            if (!t) return;
+            const half = t.scrollWidth / 2;
+            let next = t.scrollLeft + 1;
+            if (next >= half) next -= half;
+            t.scrollLeft = next;
+        };
+        if (!isHovering) intervalRef.current = setInterval(tick, speedMsPerStep);
+        return () => {
+            if (intervalRef.current) clearInterval(intervalRef.current);
+            intervalRef.current = null;
+        };
+    }, [autoScroll, speedMsPerStep, isHovering]);
+
+    const fadeMask = {
+        WebkitMaskImage:
+            "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+        maskImage:
+            "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+    } as React.CSSProperties;
+
+    return (
+        <div className="mt-4 relative">
+            <div className="relative overflow-hidden" style={fadeMask}>
+                <div
+                    ref={trackRef}
+                    className="flex flex-nowrap gap-2 overflow-x-auto scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                    onMouseEnter={() => setIsHovering(true)}
+                    onMouseLeave={() => setIsHovering(false)}
+                >
+                    {loopItems.map((it, idx) => (
+                        <div key={`${it.alt}-${idx}`} className="relative shrink-0 rounded-xl p-[1px] bg-gradient-to-br from-primary/30 via-transparent to-primary/30" style={{ width: size, height: size }}>
+                            <div className="relative h-full w-full rounded-[10px] bg-card/70 backdrop-blur-sm ring-1 ring-border/50">
+                                <Image src={it.src} alt={it.alt} fill sizes={`${size}px`} className="object-cover rounded-[10px]" />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default function BigCategories({ data }: { data?: BigCategory[] }) {
+    const list = useMemo<BigCategory[]>(() => {
+        if (data && data.length) return data;
+
+        const cats = (categoriesData as unknown as Category[]);
+
+        const GROUP_DEFS: Array<{ id: BigCategory["id"]; title: string; description: string; slugs: string[] }> = [
+            {
+                id: "entertainment",
+                title: "Film & Musiqi & Əyləncə",
+                description:
+                    "Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.",
+                slugs: ["netflix", "spotify", "youtube", "disney", "amazon", "hulu", "paramount", "hbo", "apple"],
+            },
+            {
+                id: "social",
+                title: "Sosial Media Panel Xidmətləri",
+                description:
+                    "Sosial mediada böyümə və brend görünürlüğü üçün praktiki xidmətlər.Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.",
+                slugs: ["social"],
+            },
+            {
+                id: "design",
+                title: "Dizayn Proqramları",
+                description:
+                    "Qrafik dizayn üçün peşəkar və əlçatan vasitələr.Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.",
+                slugs: ["adobe", "figma", "canva", "office"],
+            },
+            {
+                id: "seo",
+                title: "Qrafik & SEO tətbiqləri",
+                description:
+                    "Məhsuldarlıq, dev və SEO üçün effektiv alətlər.Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.Musiqi, film və əyləncə platformaları ilə istirahətinizi daha keyifli edin.",
+                slugs: ["productivity", "github", "vpn"],
+            },
+        ];
+
+        const groups: BigCategory[] = GROUP_DEFS.map((g) => {
+            const items: BigCategoryItem[] = cats
+                .filter((c) => g.slugs.includes(c.slug))
+                .map((c) => ({ src: c.image, alt: c.name, href: `/products?category=${c.slug}` }));
+            return {
+                id: g.id,
+                title: g.title,
+                description: g.description,
+                href: "/mehsullar",
+                items,
+            };
+        }).filter((g) => g.items.length > 0);
+
+        return groups;
+    }, [data]);
+
+    return (
+        <section className="w-full py-6">
+            <div className="mx-auto grid grid-cols-1 gap-5 lg:grid-cols-2">
+                {list.map((cat) => (
+                    <article key={cat.id} className="rounded-2xl  ring-1 ring-border/60 bg-black/10 backdrop-blur-3xl p-6 text-foreground shadow-sm">
+                        <h2 className="text-2xl sm:text-3xl font-semibold">{cat.title}</h2>
+                        <p className="mt-3 text-sm sm:text-base text-muted-foreground leading-6">
+                            {cat.description}
+                        </p>
+                        <AutoScrollRow items={cat.items} />
+                        <div className="mt-5">
+                            <Link href={cat.href} className="text-yellow-400 font-semibold hover:underline" aria-label="Ətraflı Bax">
+                                Ətraflı Bax
+                            </Link>
+                        </div>
+                    </article>
+                ))}
+            </div>
+            <div className="mt-6 flex justify-center">
+                <ActionLinkButton label="Bütün kateqoriyalar" href="/mehsullar" />
+            </div>
+        </section>
+    );
+}
+
+
+

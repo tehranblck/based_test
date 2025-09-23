@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { SortAsc, SortDesc, Calendar, Hash } from "lucide-react";
 import { cn } from "@/lib/utils";
-import SortMenu, { type SortOption } from "./SortMenu";
+import SortMenu from "./SortMenu";
+import type { SortOption } from "@/types";
 
 interface BarProps {
     title?: string;
