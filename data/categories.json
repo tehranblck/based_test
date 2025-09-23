@@ -1,0 +1,222 @@
+[
+    {
+        "id": "netflix",
+        "name": "Netflix",
+        "slug": "netflix",
+        "image": "/categori.webp",
+        "description": "Netflix premium hesabları",
+        "createdAt": "2024-08-21T00:00:00.000Z",
+        "updatedAt": "2024-09-01T00:00:00.000Z",
+        "popularity": 98,
+        "priceFrom": 7.99
+    },
+    {
+        "id": "spotify",
+        "name": "Spotify",
+        "slug": "spotify",
+        "image": "/categori3.gif",
+        "description": "Spotify Premium hesabları",
+        "createdAt": "2024-08-22T00:00:00.000Z",
+        "updatedAt": "2024-09-02T00:00:00.000Z",
+        "popularity": 95,
+        "priceFrom": 4.99
+    },
+    {
+        "id": "chatgpt",
+        "name": "ChatGPT Plus",
+        "slug": "chatgpt",
+        "image": "/categori5.webp",
+        "description": "ChatGPT Plus abunəlikləri",
+        "createdAt": "2024-08-23T00:00:00.000Z",
+        "updatedAt": "2024-09-03T00:00:00.000Z",
+        "popularity": 92,
+        "priceFrom": 20.00
+    },
+    {
+        "id": "youtube",
+        "name": "YouTube Premium",
+        "slug": "youtube",
+        "image": "/categori3.gif",
+        "description": "YouTube Premium hesabları",
+        "createdAt": "2024-08-24T00:00:00.000Z",
+        "updatedAt": "2024-09-04T00:00:00.000Z",
+        "popularity": 90,
+        "priceFrom": 6.99
+    },
+    {
+        "id": "disney",
+        "name": "Disney+",
+        "slug": "disney",
+        "image": "/categori1.webp",
+        "description": "Disney Plus hesabları",
+        "createdAt": "2024-08-25T00:00:00.000Z",
+        "updatedAt": "2024-09-05T00:00:00.000Z",
+        "popularity": 82,
+        "priceFrom": 7.49
+    },
+    {
+        "id": "amazon",
+        "name": "Amazon Prime",
+        "slug": "amazon",
+        "image": "/categori1.webp",
+        "description": "Amazon Prime Video hesabları",
+        "createdAt": "2024-08-26T00:00:00.000Z",
+        "updatedAt": "2024-09-06T00:00:00.000Z",
+        "popularity": 84,
+        "priceFrom": 5.99
+    },
+    {
+        "id": "adobe",
+        "name": "Adobe Creative",
+        "slug": "adobe",
+        "image": "/categori4.webp",
+        "description": "Adobe Creative Cloud lisenziyaları",
+        "createdAt": "2024-08-27T00:00:00.000Z",
+        "updatedAt": "2024-09-07T00:00:00.000Z",
+        "popularity": 76,
+        "priceFrom": 12.99
+    },
+    {
+        "id": "office",
+        "name": "Microsoft Office",
+        "slug": "office",
+        "image": "/categori4.webp",
+        "description": "Microsoft Office 365 hesabları",
+        "createdAt": "2024-08-28T00:00:00.000Z",
+        "updatedAt": "2024-09-08T00:00:00.000Z",
+        "popularity": 80,
+        "priceFrom": 8.99
+    },
+    {
+        "id": "canva",
+        "name": "Canva Pro",
+        "slug": "canva",
+        "image": "/categori5.webp",
+        "description": "Canva Pro hesabları",
+        "createdAt": "2024-08-29T00:00:00.000Z",
+        "updatedAt": "2024-09-09T00:00:00.000Z",
+        "popularity": 78,
+        "priceFrom": 5.49
+    },
+    {
+        "id": "grammarly",
+        "name": "Grammarly",
+        "slug": "grammarly",
+        "image": "/categori1.webp",
+        "description": "Grammarly Premium hesabları",
+        "createdAt": "2024-08-30T00:00:00.000Z",
+        "updatedAt": "2024-09-10T00:00:00.000Z",
+        "popularity": 72,
+        "priceFrom": 3.99
+    },
+    {
+        "id": "figma",
+        "name": "Figma",
+        "slug": "figma",
+        "image": "/categori3.gif",
+        "description": "Figma Pro hesabları",
+        "createdAt": "2024-08-31T00:00:00.000Z",
+        "updatedAt": "2024-09-11T00:00:00.000Z",
+        "popularity": 70,
+        "priceFrom": 9.99
+    },
+    {
+        "id": "vpn",
+        "name": "VPN Xidmətləri",
+        "slug": "vpn",
+        "image": "/categori3.gif",
+        "description": "Premium VPN hesabları",
+        "createdAt": "2024-09-01T00:00:00.000Z",
+        "updatedAt": "2024-09-12T00:00:00.000Z",
+        "popularity": 68,
+        "priceFrom": 2.99
+    },
+    {
+        "id": "gaming",
+        "name": "Oyun Platformaları",
+        "slug": "gaming",
+        "image": "/categori1.webp",
+        "description": "Steam, Epic Games və digər oyun hesabları",
+        "createdAt": "2024-09-02T00:00:00.000Z",
+        "updatedAt": "2024-09-13T00:00:00.000Z",
+        "popularity": 74,
+        "priceFrom": 1.99
+    },
+    {
+        "id": "social",
+        "name": "Sosial Media",
+        "slug": "social",
+        "image": "/categori1.webp",
+        "description": "Instagram, TikTok və digər sosial media",
+        "createdAt": "2024-09-03T00:00:00.000Z",
+        "updatedAt": "2024-09-14T00:00:00.000Z",
+        "popularity": 81,
+        "priceFrom": 1.49
+    },
+    {
+        "id": "productivity",
+        "name": "Məhsuldarlıq",
+        "slug": "productivity",
+        "image": "/categori1.webp",
+        "description": "Notion, Slack və digər məhsuldarlıq alətləri",
+        "createdAt": "2024-09-04T00:00:00.000Z",
+        "updatedAt": "2024-09-15T00:00:00.000Z",
+        "popularity": 66,
+        "priceFrom": 2.49
+    },
+    {
+        "id": "hulu",
+        "name": "Hulu",
+        "slug": "hulu",
+        "image": "/categori1.webp",
+        "description": "Hulu streaming hesabları",
+        "createdAt": "2024-09-05T00:00:00.000Z",
+        "updatedAt": "2024-09-16T00:00:00.000Z",
+        "popularity": 60,
+        "priceFrom": 6.49
+    },
+    {
+        "id": "paramount",
+        "name": "Paramount+",
+        "slug": "paramount",
+        "image": "/categori1.webp",
+        "description": "Paramount Plus hesabları",
+        "createdAt": "2024-09-06T00:00:00.000Z",
+        "updatedAt": "2024-09-17T00:00:00.000Z",
+        "popularity": 58,
+        "priceFrom": 5.49
+    },
+    {
+        "id": "hbo",
+        "name": "HBO Max",
+        "slug": "hbo",
+        "image": "/categori1.webp",
+        "description": "HBO Max streaming hesabları",
+        "createdAt": "2024-09-07T00:00:00.000Z",
+        "updatedAt": "2024-09-18T00:00:00.000Z",
+        "popularity": 62,
+        "priceFrom": 7.49
+    },
+    {
+        "id": "apple",
+        "name": "Apple Services",
+        "slug": "apple",
+        "image": "/categori1.webp",
+        "description": "Apple Music, iCloud və digər Apple xidmətləri",
+        "createdAt": "2024-09-08T00:00:00.000Z",
+        "updatedAt": "2024-09-19T00:00:00.000Z",
+        "popularity": 64,
+        "priceFrom": 0.99
+    },
+    {
+        "id": "github",
+        "name": "GitHub Pro",
+        "slug": "github",
+        "image": "/categori1.webp",
+        "description": "GitHub Pro və Enterprise hesabları",
+        "createdAt": "2024-09-09T00:00:00.000Z",
+        "updatedAt": "2024-09-20T00:00:00.000Z",
+        "popularity": 50,
+        "priceFrom": 3.49
+    }
+]

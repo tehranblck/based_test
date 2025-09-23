@@ -1,0 +1,126 @@
+# NMR SHOP – Cursor Rules
+you are senior next js developer
+
+## Goals
+- Next.js 15+ (App Router) + TypeScript + TailwindCSS + shadcn/ui.
+- Mobile-first, fast, minimal animations, game-shop inspired UI.
+- Full light/dark mode support, colors stored as CSS variables in globals.css (:root, .dark).
+- Data comes from Python microservices (products, categories).
+- Fully component-driven architecture (ui primitives + feature components).
+- ESLint/Prettier compliant, no comments, clean code only. No TypeScript errors.
+
+## Tech Baseline
+- React Server Components by default. Use client components only when necessary.
+- Tailwind for styling only. Colors via CSS variables in `globals.css`.
+- Use shadcn/ui (Button, Input, Card, Sheet, Dialog, DropdownMenu, Skeleton, Toaster).
+- Dark mode handled with `next-themes`.
+
+## Project Structure (App Router)
+- app/
+  - (marketing)/  
+    - page.tsx        -> Home
+    - about/page.tsx
+    - products/page.tsx
+    - contact/page.tsx
+    - terms/page.tsx
+    - layout.tsx      -> Base layout (Header, Footer, ThemeProvider)
+  - api/             -> (proxy if needed)
+- components/
+  - ui/              -> shadcn-based primitives (button, input, badge, sheet, dialog, dropdown-menu, skeleton, toast)
+  - shared/          -> header, footer, mobile-nav, container, section
+  - product/         -> product-card, product-grid, category-badge, price
+  - carousel/        -> slider.tsx (minimal, mobile swipe support)
+- lib/
+  - api.ts           -> fetch client
+  - types.ts         -> zod schemas + inferred types
+  - constants.ts     -> ROUTES, revalidate, limits
+  - utils.ts         -> helpers
+- styles/
+  - globals.css      -> :root CSS vars + Tailwind layers
+- env
+  - NEXT_PUBLIC_API_URL=https://api.nmrshop.az
+
+## Pages (routes)
+- `/`              -> hero, featured categories, featured products
+- `/about`         -> about NMR Shop
+- `/products`      -> category filter + product grid (SSR/ISR)
+- `/contact`       -> contact form
+- `/terms`         -> rules/terms
+
+## Theming & Colors
+- Colors managed only via CSS variables:
+  - `:root { --bg: ...; --fg: ...; --primary: ...; --muted: ...; }`
+  - `.dark { --bg: ...; --fg: ...; --primary: ...; }`
+- Tailwind config extends these variables.
+
+## Data Contracts (Python Microservices)
+- Base URL: `process.env.NEXT_PUBLIC_API_URL`
+- Endpoints:
+  - `GET /products?limit=&offset=&category=` -> Product list
+  - `GET /categories` -> Category list
+  - `GET /products/:id` -> Single product
+- Schemas (zod):
+  - Product: `{ id: string; title: string; image: string; price: number; currency: "AZN"|"USD"; categoryId: string; stock?: number }`
+  - Category: `{ id: string; name: string; slug: string }`
+
+## Data Fetching
+- `lib/api.ts`:
+  - `fetchJson<T>(path, { method?: "GET", cache?: RequestCache, next?: { revalidate?: number } })`
+  - Default: `GET`, `cache: "force-cache"`, `next.revalidate = 60`.
+  - Use inside server components directly (`await getProducts()`).
+- Fallback UI for zod parsing errors.
+
+## Component API Conventions
+- All components typed with props.
+- No inline styles; Tailwind + CSS vars only.
+- Re-export shadcn/ui components (Button, Input, etc.).
+- `ProductCard`: `{ product: Product }`, show image, title, price, category badge. Minimal hover animation.
+- `Carousel`: swipe-friendly, no autoplay, mobile optimized.
+
+## Accessibility
+- Always use `alt`.
+- Clear focus rings (`focus-visible:outline-*`).
+- Proper aria-attributes and semantic HTML.
+- Mobile-optimized font sizes and contrasts.
+
+## Performance
+- Use `next/image` with responsive sizes.
+- Lazy load long lists.
+- ISR default: 60s.
+- Minimal animations; respect `prefers-reduced-motion`.
+
+## State & Logic
+- Minimal global state. (Cart not implemented yet).
+- Local state with `useState`/`useEffect` only in client components.
+- Data fetching in RSC whenever possible.
+
+## Lint & Style
+- Strict TypeScript, no `any`.
+- ESLint + Prettier.
+- No comments, clean readable code.
+- File names kebab-case, components PascalCase.
+
+## Error Handling
+- Catch HTTP and schema errors in `lib/api.ts`.
+- Show skeletons or empty states when data missing.
+
+## Few-shot Directives (Cursor)
+- “Build Home page hero” → `app/(marketing)/page.tsx` with mobile-first hero and featured products.
+- “Products grid + filter” → `app/(marketing)/products/page.tsx` server component with query param filters.
+- “Header/Footer” → `components/shared/header.tsx`, `components/shared/footer.tsx`, mobile menu using `Sheet`.
+- “ThemeProvider + Layout” → `app/(marketing)/layout.tsx` with `ThemeProvider`, `Toaster`, `Header`, `Footer`.
+- “globals.css colors” → use :root/.dark vars and Tailwind imports.
+
+## Do / Don’t
+- ✅ Do: RSC default, mobile-first, zod types, CSS vars, dark/light, shadcn/ui.
+- ❌ Don’t: Inline styles, heavy animations, `any`, comments, exposing secrets.
+
+## Ready-to-Use Tokens
+- ROUTES: `{ home: "/", about: "/about", products: "/products", contact: "/contact", terms: "/terms" }`
+- REVALIDATE_SECONDS: `60`
+
+## Acceptance Criteria
+- All required pages exist and are mobile-optimized.
+- Colors update globally when CSS vars change.
+- Products page fetches from Python API, no TS errors, shows error/empty states.
+- Light/Dark mode works flawlessly.
