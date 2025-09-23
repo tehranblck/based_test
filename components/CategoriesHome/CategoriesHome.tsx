@@ -33,7 +33,7 @@ export default function CategoriesHome() {
         <section className="w-full py-8">
             <div className="mx-auto ">
                 <Bar className="sm:px-4 mb-4" title="Kateqoriyalar" sortValue={sortValue} onSortChange={setSortValue} />
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                <div className="grid grid-cols-3 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                     {sorted.slice(0, 10).map((category) => (
                         <CategoryBox
                             key={category.id}
