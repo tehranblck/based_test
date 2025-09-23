@@ -23,10 +23,11 @@ const defaultOptions: SortOption[] = [
     { value: "price-high", label: "Qiymət (Yuxarı)", icon: Hash },
 ];
 
-export default function Bar({ title = "Məhsullar", className, sortOptions = defaultOptions, sortValue, onSortChange }: BarProps) {
-    const [internal, setInternal] = useState(sortValue ?? sortOptions[0]?.value ?? "newest");
+export default function Bar({ title = "Məhsullar", className, sortOptions, sortValue, onSortChange }: BarProps) {
+    const optionsToUse = (sortOptions && sortOptions.length > 0) ? sortOptions : (onSortChange ? defaultOptions : []);
+    const [internal, setInternal] = useState(sortValue ?? optionsToUse[0]?.value ?? "newest");
     const currentValue = sortValue ?? internal;
-    const hasSort = (sortOptions?.length ?? 0) > 0;
+    const hasSort = optionsToUse.length > 0;
 
     return (
         <div className={cn("w-full bg-secondary rounded-xl text-secondary-foreground shadow-sm", className)}>
@@ -40,7 +41,7 @@ export default function Bar({ title = "Məhsullar", className, sortOptions = def
 
                     {hasSort ? (
                         <SortMenu
-                            options={sortOptions}
+                            options={optionsToUse}
                             value={currentValue}
                             onChange={(v) => (onSortChange ? onSortChange(v) : setInternal(v))}
                         />
