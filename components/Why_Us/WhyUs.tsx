@@ -33,7 +33,7 @@ export default function WhyUs() {
                         Niyə Biz?
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        "Rahatlıq, təhlükəsizlik və sərfəli qiymətlər bir arada."
+                        &quot;Rahatlıq, təhlükəsizlik və sərfəli qiymətlər bir arada.&quot;
                     </p>
                 </div>
 

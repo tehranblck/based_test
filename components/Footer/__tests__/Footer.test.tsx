@@ -107,7 +107,7 @@ describe("Footer", () => {
         render(<Footer />);
 
         const saytproBadge = screen.getByText("Saytpro");
-    expect(saytproBadge).toHaveClass("bg-purple-600", "text-white", "rounded-md", "font-medium");
+        expect(saytproBadge).toHaveClass("bg-purple-600", "text-white", "rounded-md", "font-medium");
     });
 
     it("contact links have correct href attributes", () => {

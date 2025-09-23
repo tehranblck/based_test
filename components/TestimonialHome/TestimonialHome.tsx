@@ -82,6 +82,7 @@ export default function TestimonialHome() {
     const [comment, setComment] = useState("");
     const [rating, setRating] = useState<number>(5);
     const [sent, setSent] = useState(false);
+    console.log(service)
 
     function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
