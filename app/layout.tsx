@@ -6,6 +6,8 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { Container } from "@/components/Container/Container";
 import { Particles } from "@/components/ui/shadcn-io/particles";
+import BasketSideBar from "@/components/BasketSideBar/BasketSideBar";
+import GlobalCartButton from "@/components/BasketSideBar/GlobalCartButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,8 +55,12 @@ export default function RootLayout({
           <Container>
             {children}
           </Container>
-          
+
           <Footer />
+
+          {/* Basket Sidebar available globally */}
+          <BasketSideBar />
+          <GlobalCartButton />
         </ThemeProvider>
       </body>
     </html>

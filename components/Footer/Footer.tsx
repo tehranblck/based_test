@@ -36,7 +36,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer style={{ borderTopLeftRadius: "20px", borderTopRightRadius: "20px" }} className="bg-card/60 text-foreground  relative">
+            <footer style={{ borderTopLeftRadius: "20px", borderTopRightRadius: "20px" }} className="bg-card text-foreground  relative">
                 <div className=" max-w-[90rem] mx-auto px-4 py-12">
                     <div className="mb-10 rounded-xl border border-border bg-primary/5 p-4 sm:p-6 flex flex-col md:flex-row items-center justify-between gap-3">
                         <div className="text-center md:text-left">

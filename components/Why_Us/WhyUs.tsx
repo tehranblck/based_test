@@ -26,8 +26,8 @@ export default function WhyUs() {
     ];
 
     return (
-        <section className="py-16 px-4 bg-background">
-            <div className=" mx-auto">
+        <section className="py-16 px-4 ">
+            <div className=" mx-auto" >
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                         Niyə Biz?
@@ -47,7 +47,7 @@ export default function WhyUs() {
                         />
                     ))}
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     );
 }

@@ -2,30 +2,25 @@
 
 exports[`Footer matches snapshot 1`] = `
 <footer
-  class="bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white relative overflow-hidden"
+  class="bg-card/60 text-foreground  relative"
+  style="border-top-left-radius: 20px; border-top-right-radius: 20px;"
 >
   <div
-    class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(253,224,71,0.06),transparent_60%)]"
-  />
-  <div
-    class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-yellow-400/20 to-transparent"
-  />
-  <div
-    class=" max-w-[90rem] mx-auto px-4 py-12 relative z-10"
+    class=" max-w-[90rem] mx-auto px-4 py-12"
   >
     <div
-      class="mb-10 rounded-xl border border-white/10 bg-white/5 p-4 sm:p-6 backdrop-blur-sm flex flex-col md:flex-row items-center justify-between gap-3"
+      class="mb-10 rounded-xl border border-border bg-primary/5 p-4 sm:p-6 flex flex-col md:flex-row items-center justify-between gap-3"
     >
       <div
         class="text-center md:text-left"
       >
         <p
-          class="text-sm text-gray-300"
+          class="text-sm text-muted-foreground"
         >
           Sualınız var? Dəstək komandamız 24/7 onlayndır.
         </p>
         <p
-          class="text-base font-semibold text-yellow-400"
+          class="text-base font-semibold text-secondary"
         >
           Bizə yazın, dərhal cavab alacaqsınız.
         </p>
@@ -35,7 +30,7 @@ exports[`Footer matches snapshot 1`] = `
       >
         <a
           aria-label="WhatsApp ilə əlaqə"
-          class="inline-flex items-center justify-center rounded-md bg-green-500 hover:bg-green-600 text-black font-medium px-4 py-2 transition-colors"
+          class="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/90 font-medium px-4 py-2 transition-colors"
           href="https://wa.me/994775450755"
           rel="noopener noreferrer"
           target="_blank"
@@ -44,7 +39,7 @@ exports[`Footer matches snapshot 1`] = `
         </a>
         <a
           aria-label="Telegram ilə əlaqə"
-          class="inline-flex items-center justify-center rounded-md bg-blue-500 hover:bg-blue-600 text-white font-medium px-4 py-2 transition-colors"
+          class="inline-flex items-center justify-center rounded-md bg-muted text-foreground hover:bg-accent font-medium px-4 py-2 transition-colors"
           href="https://t.me/basedaz"
           rel="noopener noreferrer"
           target="_blank"
@@ -63,13 +58,13 @@ exports[`Footer matches snapshot 1`] = `
           class="flex items-center space-x-3"
         >
           <span
-            class="text-2xl font-bold text-yellow-400"
+            class="text-2xl font-bold text-secondary"
           >
             BASED.AZ
           </span>
         </div>
         <p
-          class="text-gray-300 leading-relaxed text-sm"
+          class="text-muted-foreground leading-relaxed text-sm"
         >
           Rəqəmsal hesablar, abunəliklər, oyunlar, proqram lisenziyaları və digər bütün ehtiyaclarınızı tək platformada rahat, sürətli və sərfəli şəkildə qarşılamaq mümkündür. Seçim edin, arxayın olun və xidmət keyfiyyətini hiss edin.
         </p>
@@ -78,7 +73,7 @@ exports[`Footer matches snapshot 1`] = `
         class="space-y-4"
       >
         <h3
-          class="text-yellow-400 font-semibold text-lg"
+          class="text-foreground font-semibold text-lg"
         >
           Əlaqə
         </h3>
@@ -87,7 +82,7 @@ exports[`Footer matches snapshot 1`] = `
         >
           <div>
             <a
-              class="text-gray-300 hover:text-yellow-400 transition-colors duration-200 text-sm"
+              class="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm"
               href="tel:+994775450755"
             >
               Əlaqə nömrəsi: +994775450755
@@ -95,7 +90,7 @@ exports[`Footer matches snapshot 1`] = `
           </div>
           <div>
             <a
-              class="text-gray-300 hover:text-yellow-400 transition-colors duration-200 text-sm"
+              class="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm"
               href="mailto:contact@based.az"
             >
               Email: contact@based.az
@@ -107,13 +102,13 @@ exports[`Footer matches snapshot 1`] = `
         >
           <a
             aria-label="WhatsApp"
-            class="w-8 h-8 bg-gray-700 hover:bg-green-500 rounded flex items-center justify-center transition-all duration-200 group"
+            class="w-8 h-8 bg-muted hover:bg-secondary rounded flex items-center justify-center transition-all duration-200 group"
             href="https://wa.me/994775450755"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-4 h-4 text-muted-foreground group-hover:text-secondary-foreground"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -129,13 +124,13 @@ exports[`Footer matches snapshot 1`] = `
           </a>
           <a
             aria-label="Instagram"
-            class="w-8 h-8 bg-gray-700 hover:bg-pink-500 rounded flex items-center justify-center transition-all duration-200 group"
+            class="w-8 h-8 bg-muted hover:bg-secondary rounded flex items-center justify-center transition-all duration-200 group"
             href="https://instagram.com/based.az"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-4 h-4 text-muted-foreground group-hover:text-secondary-foreground"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -151,13 +146,13 @@ exports[`Footer matches snapshot 1`] = `
           </a>
           <a
             aria-label="Telegram"
-            class="w-8 h-8 bg-gray-700 hover:bg-blue-500 rounded flex items-center justify-center transition-all duration-200 group"
+            class="w-8 h-8 bg-muted hover:bg-secondary rounded flex items-center justify-center transition-all duration-200 group"
             href="https://t.me/basedaz"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-4 h-4 text-muted-foreground group-hover:text-secondary-foreground"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -173,13 +168,13 @@ exports[`Footer matches snapshot 1`] = `
           </a>
           <a
             aria-label="Facebook"
-            class="w-8 h-8 bg-gray-700 hover:bg-blue-600 rounded flex items-center justify-center transition-all duration-200 group"
+            class="w-8 h-8 bg-muted hover:bg-secondary rounded flex items-center justify-center transition-all duration-200 group"
             href="https://facebook.com/based.az"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-4 h-4 text-muted-foreground group-hover:text-secondary-foreground"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -195,13 +190,13 @@ exports[`Footer matches snapshot 1`] = `
           </a>
           <a
             aria-label="YouTube"
-            class="w-8 h-8 bg-gray-700 hover:bg-red-500 rounded flex items-center justify-center transition-all duration-200 group"
+            class="w-8 h-8 bg-muted hover:bg-secondary rounded flex items-center justify-center transition-all duration-200 group"
             href="https://youtube.com/@based.az"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-4 h-4 text-muted-foreground group-hover:text-secondary-foreground"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -221,7 +216,7 @@ exports[`Footer matches snapshot 1`] = `
         class="space-y-4"
       >
         <h3
-          class="text-yellow-400 font-semibold text-lg"
+          class="text-foreground font-semibold text-lg"
         >
           Kəşf et
         </h3>
@@ -232,10 +227,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Hesablar və Abunəliklər
             </span>
@@ -244,10 +239,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Proqram Lisenziyaları
             </span>
@@ -256,10 +251,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Panel Xidmətləri və Alətlər
             </span>
@@ -268,10 +263,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Sayt və Marketing Halləri
             </span>
@@ -280,10 +275,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Rəqəmsal Məhsullar və Alətlər
             </span>
@@ -294,7 +289,7 @@ exports[`Footer matches snapshot 1`] = `
         class="space-y-4"
       >
         <h3
-          class="text-yellow-400 font-semibold text-lg"
+          class="text-foreground font-semibold text-lg"
         >
           Üstünlüklərimiz
         </h3>
@@ -305,10 +300,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Sürətli Təhvil
             </span>
@@ -317,10 +312,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Etibarlı Xidmət
             </span>
@@ -329,10 +324,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               24/7 Dəstək
             </span>
@@ -341,10 +336,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Sərfəli Qiymətlər
             </span>
@@ -353,10 +348,10 @@ exports[`Footer matches snapshot 1`] = `
             class="flex items-center"
           >
             <span
-              class="w-1 h-1 bg-yellow-400 rounded-full mr-3"
+              class="w-1 h-1 bg-secondary rounded-full mr-3"
             />
             <span
-              class="text-gray-300 text-sm"
+              class="text-muted-foreground text-sm"
             >
               Avtomatlaşdırılmış Sistem
             </span>
@@ -365,7 +360,7 @@ exports[`Footer matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="mt-12 pt-6 border-t border-white/10"
+      class="mt-12 pt-6 border-t border-border"
     >
       <div
         class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
@@ -374,7 +369,7 @@ exports[`Footer matches snapshot 1`] = `
           class="text-sm text-gray-400 flex flex-wrap items-center gap-1"
         >
           <span
-            class="inline-flex items-center bg-purple-600 text-white px-3 py-1 rounded-md font-medium text-sm"
+            class="inline-flex items-center bg-secondary text-secondary-foreground px-3 py-1 rounded-md font-medium text-sm"
           >
             Saytpro
           </span>
@@ -397,7 +392,7 @@ exports[`Footer matches snapshot 1`] = `
             •
           </span>
           <a
-            class="hover:text-yellow-400 transition-colors"
+            class="hover:text-foreground transition-colors"
             href="/privacy"
           >
             Məxfilik Siyasəti
@@ -408,7 +403,7 @@ exports[`Footer matches snapshot 1`] = `
             •
           </span>
           <a
-            class="hover:text-yellow-400 transition-colors"
+            class="hover:text-foreground transition-colors"
             href="/terms"
           >
             Qaydalar

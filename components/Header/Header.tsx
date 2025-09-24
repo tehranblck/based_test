@@ -22,6 +22,7 @@ export default function Header() {
         onScroll();
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
+
     return (
         <>
             <header className={cn(
@@ -40,7 +41,6 @@ export default function Header() {
                 )}>
                     <div className="flex items-center gap-3 shrink-0">
                         <MobileNav />
-                        <Logo />
                         <Navlinks />
                     </div>
 

@@ -2,13 +2,13 @@
 
 exports[`FeatureBox matches snapshot 1`] = `
 <div
-  class="group bg-card border border-border rounded-lg p-6 hover:shadow-2xl hover:shadow-yellow-400/20 hover:-translate-y-2 hover:scale-105 hover:border-yellow-400/50 hover:bg-gradient-to-br hover:from-card hover:to-yellow-50/5 dark:hover:to-yellow-400/5 transition-all duration-200 ease-out cursor-pointer animate-pulse hover:animate-none"
+  class="group bg-card border border-border rounded-lg p-6 hover:shadow-xl hover:shadow-yellow-400/10 hover:-translate-y-1 hover:border-yellow-400/30 transition-all duration-300 ease-out cursor-pointer"
 >
   <div
-    class="mb-4 inline-flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-lg group-hover:scale-125 group-hover:rotate-12 group-hover:bg-yellow-300 group-hover:shadow-lg group-hover:shadow-yellow-400/50 transition-all duration-150 ease-out group-hover:animate-bounce"
+    class="mb-4 inline-flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-lg group-hover:scale-110 group-hover:rotate-3 group-hover:bg-yellow-300 transition-all duration-300 ease-out"
   >
     <div
-      class="group-hover:scale-75 group-hover:rotate-[-6deg] transition-all duration-100 ease-out"
+      class="group-hover:scale-90 transition-transform duration-200 ease-out"
     >
       <svg
         aria-hidden="true"
@@ -31,12 +31,12 @@ exports[`FeatureBox matches snapshot 1`] = `
     </div>
   </div>
   <h3
-    class="text-lg font-semibold text-foreground mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 group-hover:scale-105 transition-all duration-150 group-hover:tracking-wide"
+    class="text-lg font-semibold text-foreground mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors duration-200"
   >
     Test Title
   </h3>
   <p
-    class="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground group-hover:scale-[1.02] transition-all duration-200 group-hover:leading-loose"
+    class="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-200"
   >
     Test description for the feature box component.
   </p>

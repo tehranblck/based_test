@@ -10,7 +10,7 @@ export default function LoginPage() {
     const [mode, setMode] = useState<"login" | "register">("login");
 
     return (
-        <section className="w-full">
+        <section className="w-full mt-4">
             <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                 <div className="relative overflow-hidden rounded-3xl border border-border !bg-card/10 backdrop-blur-xl shadow-md">
                     <div className="grid md:max-h-[590px] md:grid-cols-2">

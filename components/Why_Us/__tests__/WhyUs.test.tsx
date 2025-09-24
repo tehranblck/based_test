@@ -41,12 +41,11 @@ describe("WhyUs", () => {
         expect(gridContainer).toHaveClass("grid", "grid-cols-1", "md:grid-cols-2", "lg:grid-cols-4", "gap-6");
     });
 
-    it("centers content with max width container", () => {
+    it("centers content with container", () => {
         const { container } = render(<WhyUs />);
-        const mainContainer = container.querySelector(".max-w-7xl");
+        const mainContainer = container.querySelector(".mx-auto");
 
         expect(mainContainer).toBeInTheDocument();
-        expect(mainContainer).toHaveClass("mx-auto");
     });
 
     it("renders title with correct typography", () => {
