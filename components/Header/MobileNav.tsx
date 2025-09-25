@@ -8,14 +8,7 @@ import { Button } from "@/components/ui/button";
 import { SearchInput } from "@/components/ui/search";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-
-const navigationLinks = [
-    { href: "/", label: "Ana Səhifə" },
-    { href: "/products", label: "Məhsullar" },
-    { href: "/about", label: "Haqqımızda" },
-    { href: "/contact", label: "Əlaqə" },
-    { href: "/terms", label: "Şərtlər" }
-];
+import { NAV_LINKS } from "./nav-links";
 
 export function MobileNav() {
     const [query, setQuery] = useState("");
@@ -47,7 +40,7 @@ export function MobileNav() {
                             />
                         </div>
                         <nav className="flex flex-col gap-1">
-                            {navigationLinks.map((link) => (
+                            {NAV_LINKS.map((link) => (
                                 <SheetClose key={link.href} asChild>
                                     <Link
                                         href={link.href}

@@ -3,21 +3,9 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, ShoppingBag, Info, Phone, FileText, Shield, Gem } from "lucide-react";
+import { NAV_LINKS } from "./nav-links";
 
-const navigationLinks = [
-    { href: "/", label: "Ana Səhifə", icon: Home },
-    { href: "/products", label: "Məhsullar", icon: ShoppingBag },
-    { href: "/haqqimizda", label: "Haqqımızda", icon: Info },
-    { href: "/terms", label: "Şərtlər", icon: FileText },
-    { href: "/musteri-reyleri", label: "Rəylər", icon: Gem },
-    { href: "/bloq", label: "Bloq", icon: Shield },
-
-    { href: "/contact", label: "Əlaqə", icon: Phone },
-
-];
-
-export function Navlinks() {
+export default function Navlinks() {
     const pathname = usePathname();
 
     const isActive = (href: string) => {
@@ -27,8 +15,8 @@ export function Navlinks() {
 
     return (
         <nav className="ml-2 hidden items-center gap-2 rounded-full bg-background/40 px-1 py-1 shadow-sm ring-1 ring-border/50 backdrop-blur md:flex">
-            {navigationLinks.map((link) => {
-                const Icon = link.icon;
+            {NAV_LINKS.map((link) => {
+                const Icon = link.icon as React.ComponentType<{ className?: string }> | undefined;
                 const active = isActive(link.href);
                 return (
                     <Link
@@ -39,7 +27,7 @@ export function Navlinks() {
                             : "text-foreground/80 hover:bg-accent hover:text-accent-foreground"
                             }`}
                     >
-                        <Icon className="h-4 w-4" />
+                        {Icon ? <Icon className="h-4 w-4" /> : null}
                         <span className={active ? "font-medium" : ""}>{link.label}</span>
                     </Link>
                 );

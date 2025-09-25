@@ -1,14 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Logo } from "./Logo";
-import { Navlinks } from "./Navlinks";
 import { Search } from "./Search";
 import { AccountButton } from "./Account_Button";
 import { MobileNav } from "./MobileNav";
 import Topbar from "./Topbar";
 import { IoWalletOutline } from "react-icons/io5";
 import { cn } from "@/lib/utils";
+import Navlinks from "./Navlinks";
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);

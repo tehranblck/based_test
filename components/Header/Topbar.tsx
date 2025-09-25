@@ -1,4 +1,4 @@
-import Social from "./Social";
+
 import { Toggle } from "./Toggle";
 import { Logo } from "./Logo";
 
