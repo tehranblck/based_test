@@ -3,8 +3,7 @@ import TrendingSidebar from "@/components/Blogs/TrendingSidebar";
 import PostsGrid from "@/components/Blogs/PostsGrid";
 import type { BlogPost } from "@/components/Blogs/types";
 import { BLOG_POSTS } from "@/components/Blogs/types";
-import BlogSearch from "@/components/Blogs/BlogSearch";
-import { notFound } from "next/navigation";
+
 
 const posts: BlogPost[] = BLOG_POSTS;
 

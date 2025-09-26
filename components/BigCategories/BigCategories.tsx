@@ -2,67 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo } from "react";
 import categoriesData from "@/data/category.json";
 import ActionLinkButton from "@/components/ui/action-link-button";
 import type { Category, BigCategory, BigCategoryItem } from "@/types";
 
 export type { BigCategoryItem, BigCategory };
-
-function AutoScrollRow({ items, size = 44, autoScroll = true, speedMsPerStep = 18 }: { items: BigCategoryItem[]; size?: number; autoScroll?: boolean; speedMsPerStep?: number }) {
-    const trackRef = useRef<HTMLDivElement | null>(null);
-    const intervalRef = useRef<NodeJS.Timeout | null>(null);
-    const [isHovering, setIsHovering] = useState(false);
-    const loopItems = useMemo(() => (items.length ? [...items, ...items] : items), [items]);
-
-    useEffect(() => {
-        if (!autoScroll) return;
-        const el = trackRef.current;
-        if (!el) return;
-        if (el.scrollWidth <= el.clientWidth) return;
-        const tick = () => {
-            const t = trackRef.current;
-            if (!t) return;
-            const half = t.scrollWidth / 2;
-            let next = t.scrollLeft + 1;
-            if (next >= half) next -= half;
-            t.scrollLeft = next;
-        };
-        if (!isHovering) intervalRef.current = setInterval(tick, speedMsPerStep);
-        return () => {
-            if (intervalRef.current) clearInterval(intervalRef.current);
-            intervalRef.current = null;
-        };
-    }, [autoScroll, speedMsPerStep, isHovering]);
-
-    const fadeMask = {
-        WebkitMaskImage:
-            "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
-        maskImage:
-            "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
-    } as React.CSSProperties;
-
-    return (
-        <div className="mt-4 relative">
-            <div className="relative overflow-hidden" style={fadeMask}>
-                <div
-                    ref={trackRef}
-                    className="flex flex-nowrap gap-2 overflow-x-auto scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-                    onMouseEnter={() => setIsHovering(true)}
-                    onMouseLeave={() => setIsHovering(false)}
-                >
-                    {loopItems.map((it, idx) => (
-                        <div key={`${it.alt}-${idx}`} className="relative shrink-0 rounded-xl p-[1px] bg-gradient-to-br from-primary/30 via-transparent to-primary/30" style={{ width: size, height: size }}>
-                            <div className="relative h-full w-full rounded-[10px] bg-card/70 backdrop-blur-sm ring-1 ring-border/50">
-                                <Image src={it.src} alt={it.alt} fill sizes={`${size}px`} className="object-cover rounded-[10px]" />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
-}
 
 export default function BigCategories({ data }: { data?: BigCategory[] }) {
     const list = useMemo<BigCategory[]>(() => {
@@ -126,7 +71,17 @@ export default function BigCategories({ data }: { data?: BigCategory[] }) {
                         <p className="mt-3 text-sm sm:text-base text-muted-foreground leading-6">
                             {cat.description}
                         </p>
-                        <AutoScrollRow items={cat.items} />
+                        <div className="mt-4">
+                            <div className="flex flex-wrap gap-2">
+                                {cat.items.map((it, idx) => (
+                                    <div key={`${it.alt}-${idx}`} className="relative rounded-xl p-[1px] bg-gradient-to-br from-primary/30 via-transparent to-primary/30" style={{ width: 44, height: 44 }}>
+                                        <div className="relative h-full w-full rounded-[10px] bg-card/70 backdrop-blur-sm ring-1 ring-border/50 overflow-hidden">
+                                            <Image src={it.src} alt={it.alt} fill sizes="44px" className="object-cover rounded-[10px]" />
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                         <div className="mt-5">
                             <Link href={cat.href} className="text-yellow-400 font-semibold hover:underline" aria-label="Ətraflı Bax">
                                 Ətraflı Bax

@@ -22,6 +22,12 @@ describe("BigCategories", () => {
         // bottom action button
         expect(screen.getByRole("link", { name: /bütün kateqoriyalar/i })).toHaveAttribute("href", "/mehsullar");
     });
+
+    it("renders items statically without duplicates", () => {
+        render(<BigCategories data={mockData} />);
+        expect(screen.getAllByAltText("Netflix")).toHaveLength(1);
+        expect(screen.getAllByAltText("Spotify")).toHaveLength(1);
+    });
 });
 
 
