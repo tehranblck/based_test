@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { BlogPost } from "./types";
 import { useState } from "react";
@@ -16,7 +17,7 @@ export default function TrendingSidebar({ trending, recommended }: Props) {
 
     return (
         <aside>
-            <div className="rounded-2xl bg-card/60 ring-1 ring-border/60 p-4">
+            <div className="rounded-2xl bg-card/60 ring-1 ring-border/60 p-3 sm:p-4">
                 <div className="flex items-center gap-4 border-b pb-2">
                     <button
                         className={cn(
@@ -41,10 +42,10 @@ export default function TrendingSidebar({ trending, recommended }: Props) {
                         Tövsiyə olunanlar
                     </button>
                 </div>
-                <div className="mt-3 space-y-3">
+                <div className="mt-3 space-y-2 sm:space-y-3">
                     {items.map((p) => (
-                        <a key={p.id} href="#" className="flex gap-3 rounded-lg hover:bg-accent/40 p-2 transition-colors">
-                            <div className="relative h-16 w-28 shrink-0 overflow-hidden rounded-md">
+                        <Link key={p.id} href={`/bloq/${p.slug}`} className="flex gap-3 rounded-lg hover:bg-accent/40 p-2 transition-colors">
+                            <div className="relative h-16 w-24 sm:w-28 shrink-0 overflow-hidden rounded-md">
                                 <Image src={p.image} alt={p.title} fill className="object-cover" />
                             </div>
                             <div className="min-w-0">
@@ -52,7 +53,7 @@ export default function TrendingSidebar({ trending, recommended }: Props) {
                                 <div className="text-sm font-medium leading-snug line-clamp-2">{p.title}</div>
                                 <div className="mt-1 text-[10px] text-muted-foreground">{p.author}</div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

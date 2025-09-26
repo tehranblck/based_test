@@ -9,12 +9,12 @@ interface ContainerProps {
 export function Container({
     children,
     className,
-    as: Component = "div"
+    as: Component = "main"
 }: ContainerProps) {
     return (
         <Component
             className={cn(
-                "max-w-[90rem] mx-auto px-4 pt-0 sm:px-6 lg:px-0",
+                "max-w-[90rem] mx-auto px-2 pt-0 sm:px-2 lg:px-0",
                 className
             )}
         >

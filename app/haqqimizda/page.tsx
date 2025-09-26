@@ -6,9 +6,9 @@ const TestimonialHome = dynamic(() => import("@/components/TestimonialHome/Testi
 
 export default function AboutPage() {
     return (
-        <main>
+        <div>
             <section className="relative py-14 sm:py-16 ">
-                <div className="mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto">
                     <div className="text-center max-w-3xl mx-auto">
                         <span className="inline-flex items-center rounded-full bg-secondary text-secondary-foreground px-3 py-1 text-xs font-medium ring-1 ring-secondary">Based.az haqqında</span>
                         <h1 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">
@@ -24,7 +24,7 @@ export default function AboutPage() {
 
 
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card/60 p-6 shadow-sm transition-all hover:shadow-md">
+                        <div className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card/60 py-6 shadow-sm transition-all hover:shadow-md">
                             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-secondary/60 to-transparent" />
                             <div className="pointer-events-none absolute -right-8 -top-10 h-28 w-28 rounded-full bg-secondary/20 blur-2xl opacity-0 group-hover:opacity-100 transition" />
                             <div className="flex items-start gap-3">
@@ -70,11 +70,9 @@ export default function AboutPage() {
             <WhyUs />
 
             <section className="py-10 sm:py-12">
-                <div className="mx-auto px-4 sm:px-6 lg:px-8">
-                    <TestimonialHome />
-                </div>
+                <TestimonialHome />
             </section>
-        </main >
+        </div >
     );
 }
 

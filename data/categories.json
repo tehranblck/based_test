@@ -1,142 +1,233 @@
 [
     {
-        "id": "netflix",
-        "name": "Netflix",
-        "slug": "netflix",
-        "image": "/categori.webp",
-        "description": "Netflix premium hesabları"
+        "id": "p1",
+        "slug": "2025-ai-startap-ideyalari",
+        "title": "2025 üçün 50+ Süni İntellekt (AI) startap ideyası",
+        "category": "Süni İntellekt",
+        "date": "25 Sentyabr 2025",
+        "image": "/slide.png",
+        "excerpt": "Yeni AI alətləri müxtəlif sahələrdə saysız-hesabsız niş imkanlar yaradır.",
+        "author": "INTELEGAIN TECHNOLOGIES",
+        "featured": true
     },
     {
-        "id": "spotify",
-        "name": "Spotify",
-        "slug": "spotify",
-        "image": "/categori.webp",
-        "description": "Spotify Premium hesabları"
+        "id": "p2",
+        "slug": "ai-agentleri-firildaq-askarlanmasi",
+        "title": "AI Agentləri fırıldaqçılığın aşkarlanmasını necə dəyişir?",
+        "category": "Süni İntellekt",
+        "date": "23 Sentyabr 2025",
+        "image": "/slide.png",
+        "excerpt": "Rəqəmsal bankçılığın artması ilə AI agentləri fırıldaq riskini ciddi azaldır.",
+        "author": "INTELEGAIN TECHNOLOGIES",
+        "featured": true
     },
     {
-        "id": "chatgpt",
-        "name": "ChatGPT Plus",
-        "slug": "chatgpt",
-        "image": "/categori.webp",
-        "description": "ChatGPT Plus abunəlikləri"
+        "id": "p3",
+        "slug": "sehiyyede-prediktiv-analitika",
+        "title": "Səhiyyədə Prediktiv Analitika: istifadə sahələri və nümunələr",
+        "category": "Süni İntellekt",
+        "date": "18 Sentyabr 2025",
+        "image": "/slide.png",
+        "excerpt": "Səhiyyədə prediktiv analitika bazarı sürətlə böyüməkdədir.",
+        "author": "INTELEGAIN TECHNOLOGIES",
+        "featured": true
     },
     {
-        "id": "youtube",
-        "name": "YouTube Premium",
-        "slug": "youtube",
-        "image": "/categori.webp",
-        "description": "YouTube Premium hesabları"
+        "id": "p4",
+        "slug": "uk-erp-top-10-2025",
+        "title": "2025 üçün Böyük Britaniyada Top 10 ERP proqramı",
+        "category": "Dynamics 365 Business Central",
+        "date": "16 Sentyabr 2025",
+        "image": "/slide.png",
+        "excerpt": "Bazarda seçim çox olduğundan düzgün ERP seçimi çətin ola bilər.",
+        "author": "INTELEGAIN TECHNOLOGIES",
+        "featured": true
     },
     {
-        "id": "disney",
-        "name": "Disney+",
-        "slug": "disney",
-        "image": "/categori.webp",
-        "description": "Disney Plus hesabları"
+        "id": "p5",
+        "slug": "erp-secimi-7-meyar",
+        "title": "ERP seçimi zamanı nəzərə alınmalı 7 meyar",
+        "category": "Dynamics 365 Business Central",
+        "date": "12 Sentyabr 2025",
+        "image": "/slide.png",
+        "excerpt": "Miqyaslana bilən infrastruktur, inteqrasiya, xərclər və dəstək – əsas meyarlar.",
+        "author": "INTELEGAIN TECHNOLOGIES",
+        "featured": false
     },
     {
-        "id": "amazon",
-        "name": "Amazon Prime",
-        "slug": "amazon",
-        "image": "/categori.webp",
-        "description": "Amazon Prime Video hesabları"
+        "id": "p6",
+        "slug": "business-central-modullari-2025",
+        "title": "Business Central modulları: Satış, Maliyyə, Anbar",
+        "category": "Dynamics 365 Business Central",
+        "date": "10 Sentyabr 2025",
+        "image": "/slide.png",
+        "excerpt": "Əməliyyatların vahid platformada idarəsi üçün əsas modulların icmalı.",
+        "author": "INTELEGAIN TECHNOLOGIES",
+        "featured": false
     },
     {
-        "id": "adobe",
-        "name": "Adobe Creative",
-        "slug": "adobe",
-        "image": "/categori.webp",
-        "description": "Adobe Creative Cloud lisenziyaları"
+        "id": "p7",
+        "slug": "startap-finanslasdirma-2025",
+        "title": "Startapların maliyyələşdirilməsi: 2025 yanaşması",
+        "category": "Startaplar",
+        "date": "05 Sentyabr 2025",
+        "image": "/slide.png",
+        "excerpt": "Pre-seed, seed və A raundlarında investor gözləntiləri necə dəyişir?",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "office",
-        "name": "Microsoft Office",
-        "slug": "office",
-        "image": "/categori.webp",
-        "description": "Microsoft Office 365 hesabları"
+        "id": "p8",
+        "slug": "mvp-nedir-strateji",
+        "title": "MVP nədir? Minimal məhsulla bazarı yoxlama strategiyası",
+        "category": "Startaplar",
+        "date": "02 Sentyabr 2025",
+        "image": "/slide.png",
+        "excerpt": "MVP planı, ölçülə bilən hədəflər və istifadəçi geribildirimi döngüsü.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "canva",
-        "name": "Canva Pro",
-        "slug": "canva",
-        "image": "/categori.webp",
-        "description": "Canva Pro hesabları"
+        "id": "p9",
+        "slug": "market-fit-necadir",
+        "title": "Product–Market Fit necə tapılır? Praktik yanaşma",
+        "category": "Startaplar",
+        "date": "29 Avqust 2025",
+        "image": "/slide.png",
+        "excerpt": "Segmentləşdirmə, dəyər təklifi və təkrarlanan istifadə göstəriciləri.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "grammarly",
-        "name": "Grammarly",
-        "slug": "grammarly",
-        "image": "/categori.webp",
-        "description": "Grammarly Premium hesabları"
+        "id": "p10",
+        "slug": "fintech-trendleri-2025",
+        "title": "FinTech trendləri 2025: ödənişlərdən kredit riskinə",
+        "category": "Maliyyə",
+        "date": "21 Avqust 2025",
+        "image": "/slide.png",
+        "excerpt": "Real-time ödənişlər, açıq bankçılıq və AI əsaslı qərarlar ön planda.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "figma",
-        "name": "Figma",
-        "slug": "figma",
-        "image": "/categori.webp",
-        "description": "Figma Pro hesabları"
+        "id": "p11",
+        "slug": "risk-idareetme-ai",
+        "title": "AI ilə risk idarəetməsi: modellər və göstəricilər",
+        "category": "Maliyyə",
+        "date": "18 Avqust 2025",
+        "image": "/slide.png",
+        "excerpt": "Kredit, likvidlik və fırıldaq risklərinin proqnozlaşdırılması üsulları.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "vpn",
-        "name": "VPN Xidmətləri",
-        "slug": "vpn",
-        "image": "/categori.webp",
-        "description": "Premium VPN hesabları"
+        "id": "p12",
+        "slug": "odeyis-platformalari-muqayise",
+        "title": "Ödəniş platformaları: Stripe, Adyen, PayPal müqayisəsi",
+        "category": "Maliyyə",
+        "date": "15 Avqust 2025",
+        "image": "/slide.png",
+        "excerpt": "Komissiyalar, fraud alətləri və qlobal əhatə baxımından fərqlər.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "gaming",
-        "name": "Oyun Platformaları",
-        "slug": "gaming",
-        "image": "/categori.webp",
-        "description": "Steam, Epic Games və digər oyun hesabları"
+        "id": "p13",
+        "slug": "edge-computing-aciqlama",
+        "title": "Edge computing nədir? Real vaxt sistemləri üçün üstünlüklər",
+        "category": "Texnologiya",
+        "date": "10 Avqust 2025",
+        "image": "/slide.png",
+        "excerpt": "Gecikmənin azaldılması və gizliliyin qorunması üçün kənar hesablama.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "social",
-        "name": "Sosial Media",
-        "slug": "social",
-        "image": "/categori.webp",
-        "description": "Instagram, TikTok və digər sosial media"
+        "id": "p14",
+        "slug": "serverless-praktik",
+        "title": "Serverless tətbiqlər: praktik başlanğıc bələdçisi",
+        "category": "Texnologiya",
+        "date": "07 Avqust 2025",
+        "image": "/slide.png",
+        "excerpt": "Funksiya əsaslı arxitektura, soyuq start və xərclərin optimallaşdırılması.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "productivity",
-        "name": "Məhsuldarlıq",
-        "slug": "productivity",
-        "image": "/categori.webp",
-        "description": "Notion, Slack və digər məhsuldarlıq alətləri"
+        "id": "p15",
+        "slug": "microservices-vs-monolith",
+        "title": "Mikroxidmətlər vs Monolit: nə vaxt hansını seçməli?",
+        "category": "Texnologiya",
+        "date": "04 Avqust 2025",
+        "image": "/slide.png",
+        "excerpt": "Komanda ölçüsü, domen sərhədləri və əməliyyat xərclərinə görə seçim.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "hulu",
-        "name": "Hulu",
-        "slug": "hulu",
-        "image": "/categori.webp",
-        "description": "Hulu streaming hesabları"
+        "id": "p16",
+        "slug": "ui-ux-2025-trendler",
+        "title": "UI/UX 2025 trendləri: minimalizm və aksesibilik",
+        "category": "Dizayn",
+        "date": "01 Avqust 2025",
+        "image": "/slide.png",
+        "excerpt": "Rəng kontrastı, klaviatura naviqasiyası və dark-mode uyğunluğu.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "paramount",
-        "name": "Paramount+",
-        "slug": "paramount",
-        "image": "/categori.webp",
-        "description": "Paramount Plus hesabları"
+        "id": "p17",
+        "slug": "design-sistem-nedir",
+        "title": "Design sistem nədir və necə qurulur?",
+        "category": "Dizayn",
+        "date": "29 İyul 2025",
+        "image": "/slide.png",
+        "excerpt": "Komponent kitabxanası, tokenlər və versiyalama strategiyası.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "hbo",
-        "name": "HBO Max",
-        "slug": "hbo",
-        "image": "/categori.webp",
-        "description": "HBO Max streaming hesabları"
+        "id": "p18",
+        "slug": "typography-praktik-rehber",
+        "title": "Veb üçün tipoqrafiya: praktik bələdçi",
+        "category": "Dizayn",
+        "date": "27 İyul 2025",
+        "image": "/slide.png",
+        "excerpt": "Ölçülər, sətiraralığı və responsiv başlıqlar üçün qaydalar.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "apple",
-        "name": "Apple Services",
-        "slug": "apple",
-        "image": "/categori.webp",
-        "description": "Apple Music, iCloud və digər Apple xidmətləri"
+        "id": "p19",
+        "slug": "growth-hacking-esaslar",
+        "title": "Growth hacking əsasları: sürətli eksperimentlər",
+        "category": "Biznes",
+        "date": "24 İyul 2025",
+        "image": "/slide.png",
+        "excerpt": "A/B test, funnel ölçmələri və məhsulun viral xüsusiyyətləri.",
+        "author": "BASED.AZ",
+        "featured": false
     },
     {
-        "id": "github",
-        "name": "GitHub Pro",
-        "slug": "github",
-        "image": "/categori.webp",
-        "description": "GitHub Pro və Enterprise hesabları"
+        "id": "p20",
+        "slug": "b2b-satis-boru",
+        "title": "B2B satış borusu: mərhələlər və göstəricilər",
+        "category": "Biznes",
+        "date": "21 İyul 2025",
+        "image": "/slide.png",
+        "excerpt": "Lead yaratmadan bağlanmaya qədər konversiyanı necə artırmalı?",
+        "author": "BASED.AZ",
+        "featured": false
+    },
+    {
+        "id": "p21",
+        "slug": "okr-heyata-kecirilmesi",
+        "title": "OKR-lərin tətbiqi: komanda hədəflərinin uyğunlaşdırılması",
+        "category": "Biznes",
+        "date": "18 İyul 2025",
+        "image": "/slide.png",
+        "excerpt": "Məqsəd və nəticələrin ölçülməsi üçün praktik çərçivə.",
+        "author": "BASED.AZ",
+        "featured": false
     }
 ]

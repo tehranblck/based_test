@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { slugify } from "@/lib/utils";
 import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import { Facebook, Instagram, Twitter, ChevronLeft, ChevronRight, Search, Star } from "lucide-react";
@@ -155,9 +156,12 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
                         {/* Article body */}
                         <article>
                             <div className="text-left">
-                                <div className="inline-flex rounded-[6px] bg-secondary/15 text-secondary-foreground ring-1 ring-secondary/30 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider">
+                                <Link
+                                    href={`/bloq/kateqoriya/${encodeURIComponent(slugify(post.category))}`}
+                                    className="inline-flex rounded-[6px] bg-secondary/15 text-secondary-foreground ring-1 ring-secondary/30 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider hover:bg-secondary/25 transition-colors"
+                                >
                                     {post.category}
-                                </div>
+                                </Link>
                                 <h1 className="mt-3 text-[30px] md:text-[38px] font-black leading-tight tracking-tight text-foreground">
                                     {post.title}
                                 </h1>
@@ -330,9 +334,12 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
                         <ul className="mt-3 divide-y divide-border/60">
                             {categories.map((c) => (
                                 <li key={c} className="py-2">
-                                    <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                                    <Link
+                                        href={`/bloq/kateqoriya/${encodeURIComponent(slugify(c))}`}
+                                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                    >
                                         {c}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

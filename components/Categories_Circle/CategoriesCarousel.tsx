@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import categoriesData from "@/data/categories.json";
+import categoriesData from "@/data/category.json";
 import type { Category } from "@/types";
 
 export type CategoryItem = { src: string; alt: string; href?: string };

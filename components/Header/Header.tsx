@@ -29,23 +29,23 @@ export default function Header() {
                 scrolled ? "bg-card/95 shadow-sm" : "bg-card/95"
             )}>
                 <div className={cn(
-                    "overflow-hidden transition-[max-height,opacity] duration-300 ease-out",
+                    "overflow-hidden   mx-auto transition-[max-height,opacity] duration-300 ease-out",
                     scrolled ? "max-h-0 opacity-0" : "max-h-10 opacity-100"
                 )}>
                     <Topbar />
                 </div>
                 <div className={cn(
-                    "mx-auto flex items-center gap-3 px-4 sm:px-6 lg:px-8 transition-[height] duration-300 ease-out",
+                    "mx-auto flex items-center gap-3  transition-[height] duration-300 ease-out",
                     scrolled ? "h-14 sm:h-16" : "h-16 sm:h-20"
                 )}>
-                    <div className="flex items-center gap-3 shrink-0">
+                    <div className="flex items-center pl-2 gap-3 shrink-0">
                         <MobileNav />
                         <Navlinks />
                     </div>
 
                     <Search />
 
-                    <div className="ml-auto flex items-center gap-2 sm:gap-3 shrink-0">
+                    <div className="ml-auto pr-2  flex items-center gap-2 sm:gap-3 shrink-0">
                         <div className="hidden sm:flex items-center gap-2 rounded-lg bg-primary/5 px-3 py-2 text-sm font-medium text-primary shadow-sm hover:bg-primary/10 transition-colors">
                             <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
                             <IoWalletOutline className="h-4 w-4" />

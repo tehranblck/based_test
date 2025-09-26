@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import CategoryBox from "./CategoryBox";
-import categoriesData from "@/data/categories.json";
+import categoriesData from "@/data/category.json";
 import ActionLinkButton from "@/components/ui/action-link-button";
 import Bar from "@/components/Bar/Bar";
 import type { Category } from "@/types";
@@ -46,7 +46,7 @@ export default function CategoriesHome() {
                     ))}
                 </div>
                 <div className="mt-6 flex justify-center">
-                    <ActionLinkButton label="Bütün məhsullar" href="/mehsullar" />
+                    <ActionLinkButton label="Bütün məhsullara " href="/mehsullar" />
                 </div>
             </div>
         </section>

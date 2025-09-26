@@ -5,7 +5,7 @@ import { Logo } from "./Logo";
 export default function Topbar() {
     return (
         <div className="w-full bg-secondary-foreground text-primary">
-            <div className="mx-auto flex h-9 sm:h-10  items-center px-4 sm:px-6 lg:px-8 text-xs sm:text-sm">
+            <div className="mx-auto max-w-[100%] px-2 flex h-9 sm:h-10  items-center  text-xs sm:text-sm">
                 <Logo />
 
 

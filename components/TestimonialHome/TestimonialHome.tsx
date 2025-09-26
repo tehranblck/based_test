@@ -96,7 +96,7 @@ export default function TestimonialHome() {
 
     return (
         <section className="w-full py-10 sm:py-12">
-            <div className="mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto">
                 <Bar className="sm:px-4 mb-4" title="Müştəri Rəyləri" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

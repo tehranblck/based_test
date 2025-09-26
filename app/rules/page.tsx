@@ -5,8 +5,8 @@ export default function RulesPage() {
 
     return (
         <main>
-            <section className="py-12 sm:py-14">
-                <div className="mx-auto  px-4 sm:px-6 lg:px-8">
+            <section className=" max-w-[90rem] mx-auto">
+                <div className="mx-auto  ">
                     <Breadcrumb className="mb-4 mt-12" />
 
                     <header className="text-center mb-8">

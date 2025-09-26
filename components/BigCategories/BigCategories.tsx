@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import categoriesData from "@/data/categories.json";
+import categoriesData from "@/data/category.json";
 import ActionLinkButton from "@/components/ui/action-link-button";
 import type { Category, BigCategory, BigCategoryItem } from "@/types";
 

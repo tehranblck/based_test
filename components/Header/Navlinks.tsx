@@ -14,7 +14,7 @@ export default function Navlinks() {
     };
 
     return (
-        <nav className="ml-2 hidden items-center gap-2 rounded-full bg-background/40 px-1 py-1 shadow-sm ring-1 ring-border/50 backdrop-blur md:flex">
+        <nav className="max-w-[90rem] mx-auto  hidden items-center gap-2 rounded-full bg-background/40 px-2  py-1 shadow-sm ring-1 ring-border/50 backdrop-blur md:flex">
             {NAV_LINKS.map((link) => {
                 const Icon = link.icon as React.ComponentType<{ className?: string }> | undefined;
                 const active = isActive(link.href);

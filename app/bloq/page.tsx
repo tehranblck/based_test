@@ -2,49 +2,11 @@ import SearchAndHero from "@/components/Blogs/SearchAndHero";
 import TrendingSidebar from "@/components/Blogs/TrendingSidebar";
 import PostsGrid from "@/components/Blogs/PostsGrid";
 import type { BlogPost } from "@/components/Blogs/types";
+import { BLOG_POSTS } from "@/components/Blogs/types";
+import BlogSearch from "@/components/Blogs/BlogSearch";
+import { notFound } from "next/navigation";
 
-const posts: BlogPost[] = [
-    {
-        id: "p1",
-        title: "2025 üçün 50+ Süni İntellekt (AI) startap ideyası",
-        category: "Süni İntellekt",
-        date: "25 Sentyabr 2025",
-        image: "/slide.png",
-        excerpt: "Yeni AI alətləri müxtəlif sahələrdə saysız-hesabsız niş imkanlar yaradır.",
-        author: "INTELEGAIN TECHNOLOGIES",
-        featured: true,
-    },
-    {
-        id: "p2",
-        title: "AI Agentləri fırıldaqçılığın aşkarlanmasını necə dəyişir?",
-        category: "Süni İntellekt",
-        date: "23 Sentyabr 2025",
-        image: "/slide.png",
-        excerpt: "Rəqəmsal bankçılığın artması ilə AI agentləri fırıldaq riskini ciddi azaldır.",
-        author: "INTELEGAIN TECHNOLOGIES",
-        featured: true,
-    },
-    {
-        id: "p3",
-        title: "Səhiyyədə Prediktiv Analitika: istifadə sahələri və nümunələr",
-        category: "Süni İntellekt",
-        date: "18 Sentyabr 2025",
-        image: "/slide.png",
-        excerpt: "Səhiyyədə prediktiv analitika bazarı sürətlə böyüməkdədir.",
-        author: "INTELEGAIN TECHNOLOGIES",
-        featured: true,
-    },
-    {
-        id: "p4",
-        title: "2025 üçün Böyük Britaniyada Top 10 ERP proqramı",
-        category: "Dynamics 365 Business Central",
-        date: "16 Sentyabr 2025",
-        image: "/slide.png",
-        excerpt: "Bazarda seçim çox olduğundan düzgün ERP seçimi çətin ola bilər.",
-        author: "INTELEGAIN TECHNOLOGIES",
-        featured: true,
-    },
-];
+const posts: BlogPost[] = BLOG_POSTS;
 
 function makeList(src: BlogPost[], len: number, prefix: string): BlogPost[] {
     if (src.length === 0) return [];
@@ -54,7 +16,7 @@ function makeList(src: BlogPost[], len: number, prefix: string): BlogPost[] {
     });
 }
 
-export default function BlogIndexPage() {
+export default function BlogIndexPage({ searchParams }: { searchParams?: { search?: string } }) {
     const featured = posts[0];
     const pool = posts;
 
@@ -63,15 +25,21 @@ export default function BlogIndexPage() {
     const recommended = makeList(pool.slice().reverse(), 6, "r");
 
     // Demo üçün qridə bütün postlar
-    const gridItems = posts;
+    const query = (searchParams?.search ?? "").toLowerCase();
+    const gridItems = query
+        ? posts.filter((p) =>
+            [p.title, p.excerpt, p.category, p.author].some((t) => t.toLowerCase().includes(query))
+        )
+        : posts;
 
     return (
-        <div className="space-y-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="max-w-[90rem] mx-auto space-y-6 sm:space-y-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
                 <div className="lg:col-span-8 order-1 lg:order-none">
+
                     <SearchAndHero featured={featured} />
                 </div>
-                <div className="lg:col-span-4">
+                <div className="lg:col-span-4 ">
                     <TrendingSidebar trending={trending} recommended={recommended} />
                 </div>
             </div>
