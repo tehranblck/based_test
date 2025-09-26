@@ -9,7 +9,7 @@ export type NavLinkItem = {
 
 export const NAV_LINKS: NavLinkItem[] = [
     { href: "/", label: "Ana Səhifə", icon: Home },
-    { href: "/products", label: "Məhsullar", icon: ShoppingBag },
+    { href: "/mehsullar", label: "Məhsullar", icon: ShoppingBag },
     { href: "/haqqimizda", label: "Haqqımızda", icon: Info },
     { href: "/rules", label: "Şərtlər", icon: FileText },
     { href: "/musteri-reyleri", label: "Rəylər", icon: Gem },
